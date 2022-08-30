@@ -1,0 +1,14 @@
+svg {
+    width: 1.2rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    &:hover {
+      color: var(--accent);
+      transform: scale(1.5);
+    }
+}
+span {
+    background: var(--secondary);
+    height: 6rem;
+    width: 0.1rem;
+}

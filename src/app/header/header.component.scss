@@ -60,7 +60,7 @@ nav {
     background: var(--primary);
     top: 100%;
     left: 0;
-    height: 100vh;
+    height: calc(100vh - 5rem);
     padding: 15px 50px 15px 20px;
     transform: translate(-100%);
     .navlink {
