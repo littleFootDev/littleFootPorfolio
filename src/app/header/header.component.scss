@@ -1,0 +1,122 @@
+nav {
+    width: 100%;
+    background: var(--primary);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 7rem;
+    }
+}
+.hamburger {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    background: var(--primary);
+    align-items: center;
+    position: relative;
+    margin-right: 1rem;
+    span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: var(--accent);
+        position: absolute;
+        pointer-events: none;
+        transition: opacity 0.3s 0.15s ease-out;
+        &:nth-child(1),
+        :nth-child(3) {
+            transition: transform 0.3s ease-out;
+        }
+        &:nth-child(1) {
+            transform: translateY(7px);
+        }
+        &:nth-child(3) {
+            transform: translateY(-7px);
+        }
+    }
+    &.open span:nth-child(1) {
+        transform: translate(0) rotate(135deg);
+    }
+    &.open span:nth-child(2) {
+        opacity: 0;
+        transition: opacity 0s ease-out;
+    }
+    &.open span:nth-child(3) {
+        transform: translate(0) rotate(-135deg);
+    }
+}
+
+
+  
+  .navlinks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    background: var(--primary);
+    top: 100%;
+    left: 0;
+    height: 100vh;
+    padding: 15px 50px 15px 20px;
+    transform: translate(-100%);
+    .navlink {
+        font-size: 1rem;
+        margin: 1rem 0;
+        font-family: var(--font-title);
+        font-weight: 300;
+        text-decoration: none;
+        color: var(--secondary);
+        display : inline-block;
+        position: relative;
+        cursor: pointer;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            width : 100%;
+            height:1px;
+            transform: scaleX(0);
+            transform-origin: left;
+            background: var(--accent);
+            transition: transform .3s ease-out;
+        }
+        &:hover::after {
+            transform : scaleX(1);
+        }
+        span {
+            color: var(--accent);
+        }
+    }
+    
+  }
+
+  .open {
+    transform: translate(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    .navlinks-container {
+        position: relative;
+        height: 5rem;
+        transform: translate(0);
+        display:flex;
+        align-items:center;
+        flex-direction: row;
+        .navlink {
+            margin : 0 1rem 0 0;
+            font-size: .8rem;
+        }
+        .btn {
+            font-size: .8rem;
+        }
+    }
+  }
+

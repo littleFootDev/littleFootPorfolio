@@ -1,1 +1,27 @@
-<p>header works!</p>
+<nav>
+  <img src="../../assets/images/petitPied.png" alt="logo" />
+    <button
+      (click)="toggleNav()"
+      class="hamburger"
+      type="button"
+      [ngClass]="{ open: navIsOpen }"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="navlinks-container open" [ngClass]="{ open: navIsOpen }">
+      <a class="navlink"><span>01.</span> Acceuil</a>
+      <a class="navlink"><span>02.</span> A propos</a>
+      <a class="navlink"><span>03.</span> Portfolio</a>
+      <a class="navlink"><span>04.</span> Contact</a>
+      <a
+        href="../../assets/documents/cv-jacques-caradi.pdf"
+        download="cv-jacques-caradi.pdf"
+        class="btn"
+        >Mon CV</a
+      >
+    </div>
+</nav>
