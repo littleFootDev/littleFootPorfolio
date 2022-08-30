@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ContainReseauxComponent } from './contain-reseaux/contain-reseaux.component';
+import { EmailComponent } from './email/email.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContainReseauxComponent
+    ContainReseauxComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,

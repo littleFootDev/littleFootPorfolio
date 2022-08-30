@@ -1,0 +1,23 @@
+.email {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display:  flex;
+      
+}
+.email-link {
+
+    text-decoration: none;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+    font-size: 0.8rem;
+    &:hover {
+      color: var(--accent);
+      transform: scale(1.2)
+    }
+}
+
+span {
+    background: var(--secondary);
+    height: 6rem;
+    width: 0.1rem;
+  }
