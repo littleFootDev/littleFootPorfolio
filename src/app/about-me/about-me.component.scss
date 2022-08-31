@@ -1,0 +1,112 @@
+.contain {
+    width: calc(100vw - 4rem);
+    align-items: center;
+    justify-content: center;
+    color : var(--secondary);
+    .container {
+        width : 80%;
+        .container-total {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .description{
+                font-size:1rem;
+                margin-bottom: 1rem;
+            }
+        }
+        .contain-techno {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction:column;
+            font-size: 1rem;
+            .skills-list {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin: 1rem 0 2rem 0;
+                li {
+                    list-style: none;
+                    margin-bottom:.3rem;
+                }
+            }
+
+        }
+        .contain-image {
+            position: relative;
+            border: 0.15rem solid var(--accent);
+            .image {
+                transform : translate(-1rem, -1rem);
+                background: var(--accent);
+                height:9.99rem;
+                transition: var(--transition);
+                :hover {
+                    opacity: 1;
+                }
+                img {
+                    width: 7rem;
+                    height: 10rem;
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+    container-total {
+        flex-direction: row;
+        justify-content: space-between;
+        .description {
+            width: 20rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contain {
+        width: calc(100vw - 8rem);
+        .container {  
+            .container-total {
+                flex-direction: row;
+                justify-content: space-between;
+                .contain-description {
+                    width: 20rem;
+                }
+                .contain-techno {
+                    .skills-list {
+                        justify-content: space-around;
+                    }
+                }
+                .image {
+                    height:11.99rem;
+                    :hover {
+                        opacity: 1;
+                    }
+                    img {
+                        width: 9rem;
+                        height: 12rem;
+                    }
+                }
+            }
+        }
+
+    }
+    
+}
+@media screen and (min-width: 992px) {
+    .contain {
+        
+        .container {  
+            .container-total {
+                .contain-description {
+                    width: 30rem;
+                }
+            }
+        }
+
+    }
+    
+}

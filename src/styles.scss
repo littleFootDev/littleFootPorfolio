@@ -57,9 +57,41 @@ h4 {
   background: var(--primary);
   align-items: center;
 }
+.title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  .numero {
+    color: var(--accent);
+    margin-right: .3rem;
+  }
+  .trait {
+    width: 5rem;
+    height: 0.01rem;
+    margin-left: 1rem;
+    background: var(--secondary);
+  }
+}
 
 @media screen and (min-width: 768px) {
   .contain {
     width: 4rem;
+  } 
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    .numero {
+      color: var(--accent);
+      margin-right: .5rem;
+    }
+    .trait {
+      width: 10rem;
+      height: 0.01rem;
+      margin-left: 1rem;
+      background: var(--secondary);
+    }
   }
 }
