@@ -8,6 +8,7 @@ import { ContainReseauxComponent } from './contain-reseaux/contain-reseaux.compo
 import { EmailComponent } from './email/email.component';
 import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     ContainReseauxComponent,
     EmailComponent,
     HomeComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
